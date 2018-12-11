@@ -45,7 +45,7 @@
         param.setTargetImage("D:\\Pictures\\222_25.png");
 
 
-        IJGaussianBlurOperation operation = IJOperationFactory.getFactory().createOperation(param);
+        IJGaussianBlurOperation operation = IJOperationFactory.getFactory("org.mountcloud.imagej.operate.operation").createOperation(param);
         System.out.println(operation.run());
     }
 
